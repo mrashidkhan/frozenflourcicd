@@ -38,13 +38,6 @@ Route::post('/product/{id}/select', [SelectionController::class, 'handleProductS
 
 Route::post('/complete-purchase', [SelectionController::class, 'storeDirect'])->name('storeDirect');
 
-
-// Route::get('/order-direct', [OrderController::class, 'sorderDirectCheckout'])->name('order.direct.checkout');
-// Route::post('/order-direct/{id}', [DirectOrderController::class, 'orderDirect'])->name('order.direct');
-// Route::get('/order-direct/directcheckout', [DirectCartController::class, 'orderDirectCheckout'])->name('direct.order.viewcheckout');
-// Route::post('order-direct/directcheckout', [DirectCartController::class, 'orderDirectCheckout'])->name('direct.order.checkout');
-
-
 Route::get('/my-orders/{id}', [OrderController::class, 'show'])->name('order.show')->middleware('auth');
 Route::get('/my-orders', [OrderController::class, 'myorders'])->name('my.orders')->middleware('auth');
 
