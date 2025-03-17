@@ -20,6 +20,6 @@ jobs:
           port:     ${{ secrets.LARAVEL_SITE_PORT }}
           username: ${{ secrets.LARAVEL_SITE_USER }}
           password: ${{ secrets.LARAVEL_SITE_PASS }}
-          passive: true  # Enable passive mode
+          timeout: 60  # Increase timeout to 60 seconds
 
 
