@@ -12,11 +12,7 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2.3.2
 
-    - name: Debug Secrets
-      run: |
-        echo "Server: ${{ secrets.LARAVEL_SITE_SERVER }}"
-        echo "Username: ${{ secrets.LARAVEL_SITE_USER }}"
-
+    
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
