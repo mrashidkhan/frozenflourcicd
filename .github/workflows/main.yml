@@ -21,8 +21,9 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
           server:   ${{ secrets.LARAVEL_SITE_SERVER }}
+          port:     ${{ secrets.LARAVEL_SITE_PORT }}
           username: ${{ secrets.LARAVEL_SITE_USER }}
           password: ${{ secrets.LARAVEL_SITE_PASS }}
-          port:     ${{ secrets.LARAVEL_SITE_PORT }}
+
 
 
